@@ -250,6 +250,8 @@ img {
 
 /* HOME */
 .home {
+    background-image: url(../img/black_space_background.jpg);
+    background-size: cover;
     background-color: #000;
     overflow: hidden;
 }
@@ -298,6 +300,7 @@ img {
 }
 
 .home__social {
+    margin-top: var(--mb-3);
     flex-direction: row;
     align-items: center;
 }
@@ -352,24 +355,28 @@ img {
     background: none;
 }
 
-/* ABOUT */
-.about__data {
-    text-align: center;
+/* INTRODUCTION */
+.introduction__data {
+    text-align: initial;
 }
 
-.about__description span {
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
+.introduction__description {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-);
     color: var(--first-color);
 }
 
-.about__number {
+.introduction__project {
+    text-align: center;
+}
+
+.introduction__number {
     font-size: var(--h1-font-size);
     color: var(--first-color);
     display: block;
 }
 
-.about__img {
+.introduction__img {
     justify-self: center;
     width: 220px;
 }
@@ -617,7 +624,7 @@ transition: 0.3s;
         width: 440px;
     }
 
-    .about__description {
+    .introduction__description {
         text-align: initial;
     }
 
