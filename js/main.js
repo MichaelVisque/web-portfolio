@@ -63,6 +63,7 @@ const mixer = mixitup('.portfolio__container', {
         duration: 400
     }
 });
+
 /* LINK ACTIVE PORTFOLIO */
 const linkPortfolio = document.querySelectorAll('.portfolio__item')
 
@@ -74,9 +75,38 @@ function activePortfolio() {
 }
 linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
 
+/* MODALS */
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('modal__overlay');
+
+openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget)
+        openModal(modal)
+    })
+});
+
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal')
+        closeModal(modal)
+    })
+});
+
+function openModal(modal) {
+    if (modal == null) return;
+    modal.classList.add('active')
+    overlay.classList.add('active')
+};
+
+function closeModal(modal) {
+    if (modal == null) return;
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+};
 
 /* GSAP ANIMATION */
-
 gsap.from(".home__data", {opacity: 0, duration: 2, delay:0.5, y:20})
 gsap.from(".home__greeting, .home__name, .home__profession, .home__button", {opacity: 0, duration: 2, delay:0.8, y:25, ease: 'expo.out', stagger:0.2})
 

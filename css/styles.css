@@ -325,7 +325,8 @@ img {
    color: var(--first-color-lighten);
    padding: 0.75rem 1rem;
    border-radius: 0.25rem;
-   transition: 0.3s; 
+   transition: 0.3s;
+   cursor: pointer; 
 }
 
 .button:hover {
@@ -349,10 +350,15 @@ img {
     background: none;
     color: var(--first-color);
     padding: 0;
+    cursor: pointer;
 }
 
 .button-link:hover {
     background: none;
+}
+
+#modal__button {
+    font-size: var(--normal-font-size);
 }
 
 /* INTRODUCTION */
@@ -380,15 +386,6 @@ img {
     justify-self: center;
     width: 220px;
 }
-
-/* QUALIFICATIONS */
-
-
-/* SERVICES */
-
-
-/* PROJECT IN MIND */
-
 
 /* PORTFOLIO */
 .portfolio__nav {
@@ -440,6 +437,68 @@ img {
 .active-portfolio {
     color: var(--first-color-dark);
     font-weight: var(--font-semi-bold);
+}
+
+/* PORTFOLIO MODAL */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid #000;
+    border-radius: 10px;
+    z-index: 101;
+    background-color: var(--first-color-lighten);
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal__header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.modal__header .modal__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.modal__header .close__button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: var(--font-bold);
+}
+
+.modal__body {
+    padding: 10px 15px;
+}
+
+#modal__overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+
+#modal__overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
 
 /* CONTACT ME */

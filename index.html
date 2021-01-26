@@ -51,10 +51,10 @@
                     <span class="home__profession">Web Developer</span>
                     <a download="" href="pdf\Michael Visque's Resume (2).pdf" class="button button-light home__button">Résumé</a>
                     <div class="home__social">
-                        <a href="#" class="home__social-icon">
+                        <a href="https://www.linkedin.com/in/michael-visque-1179a212a/" target="_blank" rel="noopener noreferrer" class="home__social-icon">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="home__social-icon">
+                        <a href="https://github.com/MichaelVisque" target="_blank" rel="noopener noreferrer" class="home__social-icon">
                             <i class="fab fa-github-square"></i>
                         </a>
                     </div>  
@@ -95,29 +95,58 @@
             <div class="portfolio__container bd-grid">
 
                 <div class="portfolio__content mix react">
-                    <a href="#"><img src="img\space.jpg" alt="Barred galaxy in space." class="portfolio__img"></a>
+                    <a href="https://michaelvisque.github.io/nasa-react/" target="_blank" rel="noopener noreferrer"><img src="img\space.jpg" alt="Barred galaxy in space." class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">REACT</span>
-                        <a href="#"><h2 class="portfolio__title">NASA picture of the day app.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
+                        <a href="https://michaelvisque.github.io/nasa-react/" target="_blank" rel="noopener noreferrer""><h2 class="portfolio__title">NASA Picture of the Day App.</h2></a>
+                        <button class="button button-light" id="modal__button" data-modal-target="#modal__1">View Details</button>
+                        <div class="modal" id="modal__1">
+                            <div class="modal__header">
+                                <div class="modal__title">NASA Picture of the Day App</div>
+                                <button class="close__button" data-close-button>&times;</button>
+                            </div>
+                            <div class="modal__body">
+                                <p>1</p>
+                            </div>
+                        </div>
+                        <div id="modal__overlay"></div>
                     </div>
                 </div>
 
                 <div class="portfolio__content mix web-app">
-                    <a href="#"><img src="img\calculator.PNG" alt="Calculator app with green background." class="portfolio__img"></a>
+                    <a href="https://michaelvisque.github.io/Calculator-Javascript/" target="_blank" rel="noopener noreferrer"><img src="img\calculator.PNG" alt="Calculator app with green background." class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web App</span>
-                        <a href="#"><h2 class="portfolio__title">Simple JavaScript calculator.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
+                        <a href="https://michaelvisque.github.io/Calculator-Javascript/" target="_blank" rel="noopener noreferrer"><h2 class="portfolio__title">JavaScript Calculator.</h2></a>
+                        <button class="button button-light" id="modal__button" data-modal-target="#modal__2">View Details</button>
+                        <div class="modal" id="modal__2">
+                            <div class="modal__header">
+                                <div class="modal__title">JavaScript Calculator</div>
+                                <button class="close__button" data-close-button>&times;</button>
+                            </div>
+                            <div class="modal__body">
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <div id="modal__overlay"></div>
                     </div>
                 </div>
 
                 <div class="portfolio__content mix web-app">
-                    <a href="#"><img src="img/markdown-blog-picture.PNG" alt="Picture of Michael Visque's markdown-blog-app" class="portfolio__img"></a>
+                    <a href="https://markdown-blog-visque.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src="img/markdown-blog-picture.PNG" alt="Picture of Michael Visque's markdown-blog-app" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web App</span>
-                        <a href="#"><h2 class="portfolio__title">Markdown Blog</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
+                        <a href="https://markdown-blog-visque.herokuapp.com/" target="_blank" rel="noopener noreferrer"><h2 class="portfolio__title">Markdown Blog</h2></a>
+                        <button class="button button-light" id="modal__button" data-modal-target="#modal__3">View Details</button>
+                        <div class="modal" id="modal__3">
+                            <div class="modal__header">
+                                <div class="modal__title">Markdown Blog</div>
+                                <button class="close__button" data-close-button>&times;</button>
+                            </div>
+                            <div class="modal__body">
+                                <p>3</p>
+                        </div>
+                        <div id="modal__overlay"></div>
                     </div>
                 </div>
             </div>
@@ -149,7 +178,7 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form">
+                <form action="contact.php" method="POST" class="contact__form">
                     <div class="contact__inputs">
                         <input type="text" placeholder="Name" name="name" class="contact__input">
                         <input type="text" placeholder="Email" name="email" class="contact__input">
@@ -180,10 +209,10 @@
             </div>
 
             <div class="footer__social">
-                <a href="" class="footer__link">
+                <a href="https://www.linkedin.com/in/michael-visque-1179a212a/" target="_blank" rel="noopener noreferrer" class="footer__link">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="" class="footer__link">
+                <a href="https://github.com/MichaelVisque" target="_blank" rel="noopener noreferrer" class="footer__link">
                     <i class="fab fa-github-square"></i>
                 </a>
             </div>
