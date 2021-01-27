@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "michael-portfolio-new",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

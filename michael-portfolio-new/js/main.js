@@ -1,3 +1,20 @@
+/* Web App's Firebase Configuration */
+/* For Firebase JS SDK v7.20.0 and later, measurementId is optional */
+var firebaseConfig = {
+    apiKey: "AIzaSyAHJtSoHgftbH9xx11Qd-NUXo0HsAWMGag",
+    authDomain: "visque-portfolio.firebaseapp.com",
+    projectId: "visque-portfolio",
+    storageBucket: "visque-portfolio.appspot.com",
+    messagingSenderId: "252005524871",
+    appId: "1:252005524871:web:9e73b0261f071e3e075f22",
+    measurementId: "G-JSH9MP4CE2"
+  };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+/* Reference Message Collection */
+const messagesRef = firebase.database().ref("messages");
+
 /* SHOW MENU */
 const showMenu = (toggleId,navId) => {
     const toggle = document.getElementById(toggleId),
@@ -106,7 +123,51 @@ function closeModal(modal) {
     overlay.classList.remove('active')
 };
 
-/* GSAP ANIMATION */
+/* FORM SUBMIT */
+document.getElementById('contact-form').addEventListener('submit', submitForm);
+
+function submitForm(e) {
+    e.preventDefault();
+
+    let name = getInputVal('name');
+    let email = getInputVal('email');
+    let company = getInputVal('company');
+    let phone = getInputVal('phone');
+    let message = getInputVal('message');
+
+    // Save Message
+    saveMessage(name, email, company, phone, message);
+
+    // Show Alert
+    document.querySelector(".contact-alert").style.display = "block";
+
+    // Hide Alert
+    setTimeout(function() {
+    document.querySelector(".contact-alert").style.display = "none";
+    },6000);
+
+
+    document.getElementById("contact-form").reset();
+}
+
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+// Save Messages to Firebase
+function saveMessage(name, email, company, phone, message) {
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        company: company,
+        phone: phone,
+        message: message
+    });
+}
+
+
+// GSAP ANIMATION */
 gsap.from(".home__data", {opacity: 0, duration: 2, delay:0.5, y:20})
 gsap.from(".home__greeting, .home__name, .home__profession, .home__button", {opacity: 0, duration: 2, delay:0.8, y:25, ease: 'expo.out', stagger:0.2})
 

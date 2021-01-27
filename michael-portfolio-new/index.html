@@ -168,7 +168,7 @@
                     <div class="contact__box">
                         <i class="fas fa-phone contact__icon"></i>
                         <h3 class="contact__title">Phone</h3>
-                        <span class="contact__description">123-456-7890</span>
+                        <span class="contact__description">951-760-3090</span>
                     </div>
 
                     <div class="contact__box">
@@ -177,21 +177,21 @@
                         <span class="contact__description">michaelvisque@outlook.com</span>
                     </div>
                 </div>
-
-                <form action="contact.php" method="POST" class="contact__form">
+                <form class="contact__form" id="contact-form">
+                    <p class="contact-alert">Your message has been sent. Thank you!</p>
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" name="name" class="contact__input">
-                        <input type="text" placeholder="Email" name="email" class="contact__input">
+                        <input type="text" placeholder="Name" name="name" class="contact__input" id="name" required>
+                        <input type="email" placeholder="Email" name="email" class="contact__input" id="email" required>
                     </div>
 
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Company Name" name="company-name" class="contact__input">
-                        <input type="number" placeholder="Phone Number" name="phone-number" class="contact__input">
+                        <input type="text" placeholder="Company" name="company" class="contact__input" id="company">
+                        <input type="number" placeholder="Phone Number" name="phone-number" class="contact__input" id="phone">
                     </div>
 
-                    <textarea name="" id="" cols="0" rows="7" placeholder="Message" name="message" class="contact__input"></textarea>
+                    <textarea cols="0" rows="7" placeholder="Message" name="message" class="contact__input" id="message"></textarea>
 
-                    <input type="submit" value="Send" class="button contact__button">
+                    <button type="submit" class="button contact__button">Send</button>
                 </form>
             </div>
         </section>
@@ -219,7 +219,11 @@
             <p class="footer__copyright">&#169; 2020 Michael Visque</p>
         </div>
     </footer>
-
+    
+    <!--FIREBASE SDK-->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
     <!--MIXITUP FILTER-->
     <script src="js\mixitup.min.js"></script>
     <!--GSAP-->

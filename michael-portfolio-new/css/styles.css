@@ -567,6 +567,16 @@ img {
     border: none;
 }
 
+.contact-alert {
+    background: #5ca55c;
+    color: #FFF;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    font-weight: var(--font-semi-bold);
+    display: none;
+}
+
 /* FOOTER */
 .footer {
     background-color: var(--first-color-dark);
