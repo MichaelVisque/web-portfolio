@@ -135,13 +135,13 @@ function submitForm(e) {
     let phone = getInputVal('phone');
     let message = getInputVal('message');
 
-    // Save Message
+    /* Save Message */
     saveMessage(name, email, company, phone, message);
 
-    // Show Alert
+    /* Show Alert */
     document.querySelector(".contact-alert").style.display = "block";
 
-    // Hide Alert
+    /* Hide Alert */
     setTimeout(function() {
     document.querySelector(".contact-alert").style.display = "none";
     },6000);
@@ -154,7 +154,7 @@ function getInputVal(id) {
     return document.getElementById(id).value;
 }
 
-// Save Messages to Firebase
+/* Save Messages to Firebase */
 function saveMessage(name, email, company, phone, message) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
@@ -167,7 +167,7 @@ function saveMessage(name, email, company, phone, message) {
 }
 
 
-// GSAP ANIMATION */
+/* GSAP ANIMATION */
 gsap.from(".home__data", {opacity: 0, duration: 2, delay:0.5, y:20})
 gsap.from(".home__greeting, .home__name, .home__profession, .home__button", {opacity: 0, duration: 2, delay:0.8, y:25, ease: 'expo.out', stagger:0.2})
 

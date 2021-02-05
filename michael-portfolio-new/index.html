@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- == SWIPER CSS == -->
     <link rel="stylesheet" href="">
-
-    <!-- == FONTAWESOME ICONS ==-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- == CSS == -->
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Michael Visque</title>
 </head>
 <body>
-    <!--SCROLL TOP-->
+
     <a href="#" class="scrolltop show-scroll" id="scroll-top">
         <i class="fas fa-chevron-up scrolltop__icon"></i>
     </a>
 
-    <!--HEADER-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
             <a href="#" class="nav__logo">Michael Visque</a>
@@ -29,8 +24,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#introduction" class="nav__link">Introduction</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#thank-you" class="nav__link">Thank You</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -42,7 +37,6 @@
     </header>
 
     <main class="1-main">
-        <!-- HOME -->
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
@@ -61,43 +55,23 @@
                 </div>
             </div>
         </section>
-        
-        <!-- ABOUT -->
-        <section class="introduction section bd-container" id="introduction">
-            <h2 class="section-title">Introduction</h2>
 
-            <div class="introduction__container bd-grid">
-                <div class="introduction__data bd-grid">
-                    <p class="introduction__description">
-                    I'm sure you have plenty of applications and portfolios to look over so I did my best to make my portfolio as clear and transparent 
-                    as possible. I apppreciate you taking the time to look over my portfolio, I truly appreciate it.
-                    </p>
-
-                    <div class="introduction__project">
-                        <span class="introduction__number">3</span>
-                        <span class="introduction__achievement">Projects</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PORTFOLIO -->
         <section class="portfolio section bd-container" id="portfolio">
             <span class="section-subtitle">My recent works</span>
             <h2 class="section-title">Portfolio</h2>
 
             <div class="portfolio__nav">
                 <span class="portfolio__item active-portfolio" data-filter="all">All</span>
-                <span class="portfolio__item" data-filter=".react">REACT</span>
+                <span class="portfolio__item" data-filter=".react">React</span>
                 <span class="portfolio__item" data-filter=".web-app">Web App</span>
+                <span class="portfolio__item" data-filter=".full-stack">Full Stack</span>
             </div>
 
             <div class="portfolio__container bd-grid">
-
                 <div class="portfolio__content mix react">
                     <a href="https://michaelvisque.github.io/nasa-react/" target="_blank" rel="noopener noreferrer"><img src="img\space.jpg" alt="Barred galaxy in space." class="portfolio__img"></a>
                     <div class="portfolio__data">
-                        <span class="portfolio__subtitle">REACT</span>
+                        <span class="portfolio__subtitle">React</span>
                         <a href="https://michaelvisque.github.io/nasa-react/" target="_blank" rel="noopener noreferrer""><h2 class="portfolio__title">NASA Picture of the Day App.</h2></a>
                         <button class="button button-light" id="modal__button" data-modal-target="#modal__1">View Details</button>
                         <div class="modal" id="modal__1">
@@ -106,7 +80,16 @@
                                 <button class="close__button" data-close-button>&times;</button>
                             </div>
                             <div class="modal__body">
-                                <p>1</p>
+                                <ul>
+                                  <li>&bull; This app was built in React and utilized one of NASA's popular Open <b>API</b>'s &mdash; <i>Astronomy Picture of the Day.</i></li><br>
+                                  <li>&bull; The data displayed on the page includes: <i>title</i>, <i>date</i>, <i>description</i>, and <i>photo</i>. These are pulled from the <b>API</b> so everyday a new picture is displayed with a new set of data!</li><br>
+                                  <li>&bull; Please feel free to take a look at my code on <a href="https://github.com/MichaelVisque/nasa-react" target="_blank" rel="noopener noreferrer"">GitHub</a> and visit my website <a href="https://michaelvisque.github.io/nasa-react/" target="_blank" rel="noopener noreferrer"">by clicking here.</a></li>  
+                                </ul>
+                                <br>
+                                <p><u>Utilizes:</u>
+                                <br>
+                                <b>React | React Router | JavaScript | JSON | SPA | GitHub Pages | CSS | HTML5</b>
+                                </p>
                             </div>
                         </div>
                         <div id="modal__overlay"></div>
@@ -125,17 +108,25 @@
                                 <button class="close__button" data-close-button>&times;</button>
                             </div>
                             <div class="modal__body">
-                                <p>2</p>
+                                <ul>
+                                    <li>&bull; A fully functioning calculator that: <i>adds, subtracts, multiplies,</i> and <i>divides</i> <b>whole numbers</b> and <b>decimals</b>.</li><br>
+                                    <li>&bull; Please feel free to take a look at my code on <a href="https://github.com/MichaelVisque/Calculator-Javascript" target="_blank" rel="noopener noreferrer"">GitHub</a> and visit my website <a href="https://michaelvisque.github.io/Calculator-Javascript/" target="_blank" rel="noopener noreferrer"">by clicking here.</a></li>
+                                </ul>
+                                <br>
+                                <p><u>Utilizes:</u>
+                                <br>
+                                <b>ES6 JavaScript | GitHub Pages | CSS | HTML5</b>
+                                </p>
                             </div>
                         </div>
                         <div id="modal__overlay"></div>
                     </div>
                 </div>
 
-                <div class="portfolio__content mix web-app">
+                <div class="portfolio__content mix ">
                     <a href="https://markdown-blog-visque.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src="img/markdown-blog-picture.PNG" alt="Picture of Michael Visque's markdown-blog-app" class="portfolio__img"></a>
                     <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Web App</span>
+                        <span class="portfolio__subtitle">Full Stack</span>
                         <a href="https://markdown-blog-visque.herokuapp.com/" target="_blank" rel="noopener noreferrer"><h2 class="portfolio__title">Markdown Blog</h2></a>
                         <button class="button button-light" id="modal__button" data-modal-target="#modal__3">View Details</button>
                         <div class="modal" id="modal__3">
@@ -144,7 +135,18 @@
                                 <button class="close__button" data-close-button>&times;</button>
                             </div>
                             <div class="modal__body">
-                                <p>3</p>
+                                <ul>
+                                    <li>&bull; A complete blog with markdown support! </li><br>
+                                    <li>&bull; Gives you the ability to <b>create, edit,</b> and <b>delete</b> your own articles directly on the website.</li><br>
+                                    <li>&bull; Please feel free to take a look at my code on <a href="https://github.com/MichaelVisque/markdown_blog" target="_blank" rel="noopener noreferrer"">GitHub</a> and visit my website <a href="https://markdown-blog-visque.herokuapp.com/" target="_blank" rel="noopener noreferrer"">by clicking here.</a></li>  
+                                  </ul>
+                                  <br>
+                                  <p><u>Utilizes:</u>
+                                  <br>
+                                  <b>Express | MongoDB | Node.js | DOMPurify | Marked | Heroku | EJS | JavaScript | CSS | HTML5</b>
+                                  </p>
+                                  <br>
+                                  <p>(The website may take up to 10-12 seconds to load if you're visiting for the first time. Afterwards, it shouldn't take more than a second!)</p>
                         </div>
                         <div id="modal__overlay"></div>
                     </div>
@@ -152,7 +154,19 @@
             </div>
         </section>
 
-    <!--CONTACT-->
+        <section class="thank-you section bd-container" id="thank-you">
+            <h2 class="section-title">Thank You</h2>
+
+            <div class="thank-you__container bd-grid">
+                <div class="thank-you__data bd-grid">
+                    <p class="thank-you__description">
+                    I'm sure you have plenty of applications and portfolios to look over so I did my best to make my portfolio as transparent 
+                    as possible to make it worth your while. Thank you for your time, I truly appreciate it. I hope we can work together!
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section class="contact section bd-container" id="contact">
             <span class="section-subtitle">Feel Free To</span>
             <h2 class="section-title">Contact Me</h2>
@@ -178,7 +192,11 @@
                     </div>
                 </div>
                 <form class="contact__form" id="contact-form">
-                    <p class="contact-alert">Your message has been sent. Thank you!</p>
+                    <p class="contact-alert">
+                        Your message has been sent. Thank you!
+                        <br>
+                        I'll reply to you as soon as possible.
+                    </p>
                     <div class="contact__inputs">
                         <input type="text" placeholder="Name" name="name" class="contact__input" id="name" required>
                         <input type="email" placeholder="Email" name="email" class="contact__input" id="email" required>
@@ -197,17 +215,8 @@
         </section>
     </main>
 
-    <!--FOOTER-->
     <footer class="footer">
-        <div class="footer__container bd-container">
-            <h1 class="footer__title">Thank You</h1>
-            <p class="footer__description">I hope we can work together!</p>
-
-            <div class="footer__social">
-                <a href="#" class="footer__link"></a>
-
-            </div>
-
+        <section class="footer__container bd-container">  
             <div class="footer__social">
                 <a href="https://www.linkedin.com/in/michael-visque-1179a212a/" target="_blank" rel="noopener noreferrer" class="footer__link">
                     <i class="fab fa-linkedin"></i>
@@ -217,18 +226,15 @@
                 </a>
             </div>
             <p class="footer__copyright">&#169; 2020 Michael Visque</p>
-        </div>
+        </section>
     </footer>
     
-    <!--FIREBASE SDK-->
+    
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
-    <!--MIXITUP FILTER-->
     <script src="js\mixitup.min.js"></script>
-    <!--GSAP-->
     <script src="js/gsap.min.js"></script>
-    <!--MAIN JS-->
     <script src="js/main.js"></script>
 </body>
 </html>

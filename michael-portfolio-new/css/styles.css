@@ -361,30 +361,17 @@ img {
     font-size: var(--normal-font-size);
 }
 
-/* INTRODUCTION */
-.introduction__data {
+
+.thank-you__data {
     text-align: initial;
 }
 
-.introduction__description {
+.thank-you__description {
     font-size: var(--h3-font-size);
     font-weight: var(--font-);
     color: var(--first-color);
-}
-
-.introduction__project {
-    text-align: center;
-}
-
-.introduction__number {
-    font-size: var(--h1-font-size);
-    color: var(--first-color);
     display: block;
-}
-
-.introduction__img {
-    justify-self: center;
-    width: 220px;
+    justify-content: space-between;
 }
 
 /* PORTFOLIO */
@@ -423,6 +410,11 @@ img {
     font-size: var(--h3-font-size);
     color: var(--first-color);
     margin:var(--mb-2) 0;
+}
+
+.project__header {
+    text-align: center;
+    
 }
 
 .portfolio__content:hover {
@@ -693,7 +685,7 @@ transition: 0.3s;
         width: 440px;
     }
 
-    .introduction__description {
+    .thank-you__description {
         text-align: initial;
     }
 
